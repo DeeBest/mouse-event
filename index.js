@@ -7,6 +7,6 @@ const yPositionCounter = document.getElementById('y-position-counter');
 const xPositionCounter = document.getElementById('x-position-counter');
 
 window.addEventListener('mousemove', (e) => {
-  yPositionCounter.textContent = e.offsetY;
-  xPositionCounter.textContent = e.offsetX;
+  yPositionCounter.textContent = e.clientY + 'px';
+  xPositionCounter.textContent = e.clientX + 'px';
 });
